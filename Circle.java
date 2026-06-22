@@ -1,4 +1,3 @@
-import java.awt.Point;
 
 public class Circle {
 
@@ -10,7 +9,7 @@ public class Circle {
 		this.center = center;
 	}
 	
-	public double parameter() {
+	public double perimeter() {
 		return 2*Math.PI*this.radius;
 	}
 	
@@ -32,10 +31,12 @@ public class Circle {
 		if (getClass() != obj.getClass())
 			return false;
 		Circle other = (Circle) obj;
-		if (x != other.x)
+		if (this.center.x != other.center.x)
 			return false;
-		if (y != other.y)
+		if (this.center.y != other.center.y)
+			return false;
+		if (this.radius != other.radius)
 			return false;
 		return true;
-	}}
+	}
 }
