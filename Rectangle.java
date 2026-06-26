@@ -8,15 +8,15 @@ public class Rectangle{
 	Point B2;
 
 	public Rectangle(Point A, Point B){
-		this.A = A;
-		this.B = B;
+		this.A1 = A;
+		this.B1 = B;
 
-		Point A2 = new Point(A1.x, B1.y);
-		Point B2 = new Point(B2.x, A2.y);
+		A2 = new Point(A1.x, B1.y);
+		B2 = new Point(B1.x, A1.y);
 	}
 
 	public double perimeter(){
-		return (A1.distance(A2) + A1.distance(B1)) * 2; 
+		return (A1.distance(A2) + A1.distance(B2)) * 2; 
 	}
 
 	public boolean isSquare(){
