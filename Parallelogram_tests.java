@@ -26,18 +26,6 @@ class Parallelogram_test{
     assertEquals(par.perimiter(), expected_perimiter); 
   }
 
-  
-  void test_caclulateArea(){
-    Point D = new Point(4,9);
-    Point E = new Point(1,-2);
-    Point F = new Point(10,7);
-
-    Parallelogram par = new Parallelogram(D,E,F);
-    
-    
-    
-  }
-
   void test_isRectangle_true(){
     Point D = new Point(0,0);
     Point E = new Point(10,0);
