@@ -22,12 +22,6 @@ public class Parallelogram {
 				this.C.distance(this.D);
 	}
 	
-	public double calculateArea() {
-		double len = this.A.x - this.B.x;
-		double height = this.C.y - this.B.y;
-		return len * height;
-	}
-	
 	public boolean isRectangle() {
 		double dia = Math.pow(this.C.distance(this.D), 2);
 		double side1 = Math.pow(this.A.distance(this.B), 2);
